@@ -1,0 +1,33 @@
+####
+# Template of input files for Monte Carlo simulation of
+# optical coherence tomography with embedded sphere (MCES_OCT).
+# Anything in a line after "#" is ignored as comments.
+# Space lines are also ignored.
+# Lengths are in cm, mua and mus are in 1/cm.
+# Object codes 0. No embedded object 1. Sphere; 2. Cylinder; 
+#			   3. Ellipsoid; 4. Cuboid.  
+####
+
+1.0						# file version
+1						# number of runs
+
+
+OCTobj1.mco	A		# output filename, ASCII/Binary
+10000000      			# No. of photons
+0.0005	50E-4			# dz, dr
+201	2	3			# No. of dz, dr & da.
+15E-4	5.0		0.001		## coherence length,detector receive angle in degree,collecting radius
+-0.015	0.015	50		## x_start, x_end & # scans
+
+1					# No. of layers
+1					## Object code [0)No embedded object	#1)Sphere 2)Cylinder 3)Ellipsoid 4)Cuboid]
+1						## Object layer
+# n   mua     mus   g		d	# One line for each layer
+1.0						# n for launch medium.
+1.0  1.5   60  0.9	0.1  		# layer 1
+1.0						# n for medium below.
+
+1.0  3   120  0.9		## Object properties
+0.02					## Object depth (upto center)
+0.01					## Object dimensions
+

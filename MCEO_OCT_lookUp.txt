@@ -1,0 +1,34 @@
+Monte Carlo Simulation for optical coherence tomography in Multilayered Tissue with Embedded Objects (MCEO-OCT)
+
+List of files
+
+Code files
+1. MCML.h
+2. MCMLMAIN.C
+3. MCMLIO.C
+4. MCMLGO.C
+5. MCMLNR.C
+
+Sample input files
+6. template_OCT_none.mci
+7. template_OCT_sph.mci
+8. template_OCT_cyl.mci
+9. template_OCT_ell.mci
+10. template_OCT_cub.mci
+
+Sample output files
+11.OCTlay0.mco
+12.OCTobj1.mco
+13.OCTobj2.mco
+14.OCTobj3.mco
+15.OCTobj4.mco
+
+Manuals
+16. MCEO_OCT_Manual.pdf	
+17. MCML_EO_Manual.pdf	
+18. Mcman_DrWang.pdf
+
+Execution
+Run MCEO_OCT.exe by double clicking it. After making sure the input file (.mci) is in the folder containing the executable, give the input file name in the command prompt. Output file (.mco) is written in the directory where the executable is called from.
+
+This .exe file was generated on windows platform. One can also compile the source code and generate .exe file if it needs to be run on other operating system or modifications are to be done on the code.
